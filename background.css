@@ -1,0 +1,91 @@
+/*
+ * 05/15/2018
+ * CSS file that alters the html index page
+ */
+
+body{
+	margin: 0;
+	background-color: black;
+}
+
+/*
+ * star variable is declared in background.js file
+ */
+.star{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	background-color: white;
+}
+
+.my_text{
+	position: absolute;
+	top: 40%;
+	left: 18%;
+	animation: my_text 3s ease-out 1s;
+	color: rgb(75, 213, 238);
+	font-weight: 400;
+	font-size: 300%;
+	opacity: 0;
+}
+
+/*
+ * keyframes is code used to specify animation code. 
+ */
+@keyframes my_text{
+		from{
+			opacity: 0;
+		} 
+		to{
+			opacity: 100;
+		}
+	}
+
+p{
+	color: #FFFF82;
+}
+
+#board {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  transform: perspective(300px) rotateX(25deg);
+  transform-origin: 50% 100%;
+  text-align: justify;
+  position: absolute;
+  margin-left: -9em;
+  font-weight: bold;
+  overflow: hidden;
+  font-size: 350%;
+  height: 50em;
+  width: 18em;
+  bottom: 0;
+  left: 50%;
+}
+
+#board:after {
+  position: absolute;
+  content: ' ';
+  bottom: 60%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+/* Set the scrolling animation and position it */
+#content {
+  animation: scroll 100s linear 8s;
+  position: absolute;
+  top: 100%;
+}
+
+#title, #subtitle {
+  text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -170%;
+    }
+}
