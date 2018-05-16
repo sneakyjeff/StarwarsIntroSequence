@@ -2,9 +2,9 @@
 
 Used basic CSS and Javascript to modify html to have Starwars font and background. Modified original code to have text appear letter by letter and deleted unnecessary CSS code. 
 
-![Alt text](/relative/path/to/img1.png?raw=true)
+![Alt text](/img1.png?raw=true)
 
-![Alt text](/relative/path/to/img2.png?raw=true)
+![Alt text](/img2.png?raw=true)
 
 ## Special thanks
 Followed tutorial by Christopher Kade at https://dev.to/christopherkade
