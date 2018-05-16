@@ -18,28 +18,40 @@ body{
 	background-color: white;
 }
 
-.my_text{
-	position: absolute;
-	top: 40%;
-	left: 18%;
-	animation: my_text 3s ease-out 1s;
-	color: rgb(75, 213, 238);
-	font-weight: 400;
-	font-size: 300%;
+.my_text2{
+	animation: my_text2 8s ease-out 1.5s;
 	opacity: 0;
 }
 
 /*
  * keyframes is code used to specify animation code. 
- */
-@keyframes my_text{
+ */ 
+@keyframes my_text2{
 		from{
-			opacity: 0;
+			opacity: 100;
 		} 
 		to{
-			opacity: 100;
+			opacity: 0;
 		}
 	}
+
+.my_text{
+  position: absolute;
+  color: rgb(75, 213, 238);
+  font-weight: 400;
+  font-size: 300%;
+  top: 40%;
+  left: 18%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 20em;
+  animation: my_text 4s steps(60, end); 
+}
+
+@keyframes my_text{ 
+  from { width: 0; } 
+} 
+
 
 p{
 	color: #FFFF82;
